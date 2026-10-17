@@ -1,0 +1,5 @@
+yara-python
+PyYAML
+PyQt5
+pyinstaller
+python-qt5
