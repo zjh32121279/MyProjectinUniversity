@@ -1,0 +1,151 @@
+/* Reader v10 correction: remove redundant top icons and large page titles, restore compact search layout. */
+.user-topnav__actions {
+  gap: 16px !important;
+}
+
+.logout-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-overlay__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.logout-overlay__panel {
+  position: relative;
+  z-index: 1;
+  width: min(400px, calc(100vw - 48px));
+  border-radius: 20px;
+  background: #fff;
+  padding: 32px 28px 28px;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.22);
+  text-align: center;
+}
+
+.logout-overlay__panel h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.logout-overlay__panel p {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.65;
+}
+
+.logout-overlay__actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.logout-overlay__cancel {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px 22px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.logout-overlay__cancel:hover {
+  background: #f8fafc;
+}
+
+.logout-overlay__confirm {
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(220, 38, 38, 0.3);
+}
+
+.logout-overlay__confirm:hover {
+  filter: brightness(1.08);
+}
+
+.user-flow-page > .page-title {
+  display: none !important;
+}
+
+.user-flow-page {
+  padding-top: 18px !important;
+}
+
+
+
+.ai-draggable {
+  z-index: 60 !important;
+}
+
+.ai-draggable .ai-widget__robot {
+  box-shadow: 0 12px 28px rgba(31, 94, 255, 0.24) !important;
+}
+
+/* Reader v12: complete categories, rotating recommendations, book detail, copy-level map. */
+.home-hero .category-row {
+  align-content: flex-start !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.recommend-carousel {
+  display: grid;
+  gap: 10px;
+}
+
+.recommend-card {
+  appearance: none;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  min-width: 0;
+}
+
+.recommend-card:focus-visible {
+  outline: 3px solid rgba(49, 91, 255, 0.26);
+  outline-offset: 6px;
+  border-radius: 12px;
+}
+
+.recommend-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.recommend-dots button {
+  width: 7px;
+  height: 7px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(100, 116, 139, 0.22);
+  padding: 0;
+}
+
+.recommend-dots button.is-active {
+  width: 22px;
+  background: var(--bf-primary);
+}
+
+
+

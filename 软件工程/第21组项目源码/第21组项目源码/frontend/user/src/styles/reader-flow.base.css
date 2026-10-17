@@ -1,0 +1,450 @@
+﻿.flow-title {
+  margin-bottom: 18px;
+}
+
+.flow-title h1 {
+  font-size: clamp(40px, 3.25vw, 52px);
+  letter-spacing: -0.8px;
+}
+
+.flow-title p {
+  margin-top: 12px;
+  color: #3f4b62;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.flow-stat-grid {
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.flow-stat-grid .stat-card {
+  min-height: 108px;
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.flow-stat-grid .stat-card__icon {
+  width: 56px;
+  height: 56px;
+}
+
+.flow-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 396px;
+  gap: 22px;
+  align-items: start;
+}
+
+.flow-records-card {
+  min-height: 0;
+  padding: 20px 24px 18px;
+  border-color: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.11);
+  backdrop-filter: blur(20px);
+}
+
+.flow-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.flow-card-header h2 {
+  margin: 0;
+  color: #101a3a;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.flow-card-header span {
+  display: block;
+  margin-top: 4px;
+  color: #8a94a6;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.flow-card-header--compact {
+  margin-bottom: 12px;
+}
+
+.flow-card-header--compact h2 {
+  font-size: 20px;
+}
+
+.flow-toolbar {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flow-toolbar button,
+.flow-actions button,
+.quick-action-grid button {
+  display: inline-flex;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.74);
+  padding: 0 13px;
+  color: #5d6a80;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.flow-toolbar button:disabled,
+.flow-actions button:disabled,
+.quick-action-grid button:disabled {
+  cursor: default;
+  opacity: 0.72;
+}
+
+.flow-toolbar .icon-only {
+  width: 38px;
+  padding: 0;
+  color: #315bff;
+}
+
+.flow-empty-zone,
+.notification-empty-zone {
+  display: grid;
+  min-height: 356px;
+  place-items: center;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.flow-empty-zone .empty-state,
+.notification-empty-zone .empty-state {
+  width: min(430px, 100%);
+  min-height: 190px;
+  background: rgba(255, 255, 255, 0.46);
+}
+
+.flow-list {
+  max-height: 390px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.flow-record-row {
+  grid-template-columns: 66px minmax(150px, 1fr) 112px 112px 86px 126px;
+  min-height: 108px;
+  gap: 14px;
+  padding: 12px 2px;
+}
+
+.flow-record-main h3 {
+  font-size: 17px;
+}
+
+.flow-actions {
+  display: grid;
+  gap: 7px;
+}
+
+.flow-actions button {
+  height: 31px;
+  padding: 0 9px;
+  font-size: 12px;
+}
+
+.flow-right-rail {
+  gap: 16px;
+}
+
+.flow-side-card {
+  border-color: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 22px 56px rgba(15, 23, 42, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.flow-timeline-card {
+  min-height: 282px;
+  padding: 18px;
+}
+
+.flow-rules-card {
+  min-height: 206px;
+  padding: 18px;
+}
+
+.flow-side-empty .empty-state {
+  min-height: 126px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.48);
+  padding: 12px;
+}
+
+.flow-timeline {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  padding: 6px 0 0;
+}
+
+.flow-timeline article {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.flow-timeline i {
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #315bff;
+  box-shadow: 0 0 0 5px rgba(49, 91, 255, 0.1);
+}
+
+.flow-timeline strong {
+  display: block;
+  overflow: hidden;
+  color: #101a3a;
+  font-size: 14px;
+  font-weight: 900;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flow-timeline span {
+  display: block;
+  margin-top: 3px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.notification-tabs--refined {
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.notification-tabs--refined button {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(14px);
+}
+
+.notification-tabs--refined button span {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(49, 91, 255, 0.1);
+  color: #315bff;
+  line-height: 22px;
+  text-align: center;
+}
+
+.notification-tabs--refined button.is-active span {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.notification-filter {
+  margin-left: auto;
+}
+
+.notification-layout {
+  grid-template-columns: minmax(0, 1fr) 408px;
+}
+
+.notification-records-card {
+  min-height: 554px;
+}
+
+.notification-empty-zone {
+  min-height: 168px;
+}
+
+.refined-notification-list {
+  max-height: 462px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.refined-notification-list article {
+  min-height: 74px;
+  max-height: 74px;
+  border-radius: 14px;
+  background: rgba(248, 250, 252, 0.46);
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.notification-overview-card {
+  min-height: 216px;
+  padding: 18px;
+}
+
+.notification-mini-stats {
+  gap: 10px;
+}
+
+.notification-mini-stats .stat-card {
+  min-height: 82px;
+  gap: 10px;
+  padding: 12px;
+}
+
+.notification-mini-stats .stat-card__icon {
+  width: 42px;
+  height: 42px;
+}
+
+.notification-mini-stats .stat-card strong {
+  font-size: 24px;
+}
+
+.notification-settings-card {
+  min-height: 188px;
+  padding: 18px;
+}
+
+.notification-actions-card {
+  min-height: 136px;
+  padding: 18px;
+}
+
+.quick-action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.quick-action-grid button:last-child {
+  grid-column: 1 / -1;
+}
+
+.profile-page--refined {
+  width: min(1440px, calc(100vw - 72px));
+  padding-top: 30px;
+  padding-bottom: 34px;
+}
+
+.profile-hero-card--refined {
+  grid-template-columns: 156px minmax(0, 1fr) 280px;
+  min-height: 204px;
+  padding: 26px 30px;
+  border-color: rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.11);
+  backdrop-filter: blur(20px);
+}
+
+.profile-avatar--large,
+.profile-avatar--large img {
+  width: 122px;
+  height: 122px;
+}
+
+.profile-main--refined h1 {
+  margin: 0;
+  color: #101a3a;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.profile-name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.profile-name-row span {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(49, 91, 255, 0.1);
+  padding: 0 12px;
+  color: #315bff;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.profile-main--refined dl {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 24px;
+}
+
+.credit-panel--refined {
+  min-height: 128px;
+  border: 1px solid rgba(49, 91, 255, 0.08);
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.92), rgba(255, 255, 255, 0.78));
+  justify-items: center;
+  text-align: center;
+}
+
+.credit-panel--refined small {
+  color: #22c55e;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+@media (max-width: 1399px) {
+  .user-flow-page {
+    width: min(1312px, calc(100vw - 48px));
+    padding-top: 26px;
+  }
+
+  .flow-layout,
+  .notification-layout {
+    grid-template-columns: minmax(0, 1fr) 372px;
+    gap: 18px;
+  }
+
+  .flow-records-card {
+    min-height: 454px;
+  }
+
+  .flow-empty-zone {
+    min-height: 330px;
+  }
+
+  .flow-record-row {
+    grid-template-columns: 58px minmax(130px, 1fr) 98px 98px 76px 112px;
+    gap: 10px;
+  }
+
+  .flow-actions button {
+    padding-inline: 7px;
+  }
+
+  .notification-records-card {
+    min-height: 526px;
+  }
+
+  .notification-empty-zone {
+    min-height: 406px;
+  }
+
+  .profile-hero-card--refined {
+    grid-template-columns: 138px minmax(0, 1fr) 240px;
+    gap: 22px;
+  }
+
+  .profile-main--refined dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+

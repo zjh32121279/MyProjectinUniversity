@@ -1,0 +1,34 @@
+:root {
+  --bf-brand: #1f5eff;
+  --bf-brand-soft: #eef4ff;
+  --bf-brand-hover: #1749c9;
+  --bf-ai: #6250e8;
+  --bf-ai-soft: #f1efff;
+  --bf-success: #0f9f67;
+  --bf-success-soft: #e9f8f1;
+  --bf-warning: #d97706;
+  --bf-warning-soft: #fff7e8;
+  --bf-danger: #dc2626;
+  --bf-danger-soft: #fff1f1;
+  --bf-info: #087ea4;
+  --bf-info-soft: #eaf8fb;
+  --bf-bg: #f4f6fa;
+  --bf-surface: #ffffff;
+  --bf-surface-muted: #f8fafc;
+  --bf-border: #dfe5ef;
+  --bf-border-soft: #e8edf5;
+  --bf-chrome-divider: transparent;
+  --bf-text: #0f172a;
+  --bf-text-secondary: #526071;
+  --bf-text-muted: #7d8898;
+  --bf-radius-card: 10px;
+  --bf-radius-panel: 8px;
+  --bf-radius-control: 8px;
+  --bf-radius-badge: 6px;
+  --bf-radius-icon: 10px;
+  --bf-shadow-card: 0 8px 20px rgba(15, 23, 42, 0.045);
+  --bf-shadow-soft: 0 5px 14px rgba(15, 23, 42, 0.04);
+  --bf-sidebar-width: 248px;
+  --bf-sidebar-collapsed-width: 72px;
+  --bf-topbar-height: 64px;
+}

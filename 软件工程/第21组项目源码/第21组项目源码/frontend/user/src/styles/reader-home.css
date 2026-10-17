@@ -1,0 +1,72 @@
+/* Home-page overrides live here. Base home styles remain in reader-layout.css. */
+
+.home-library--synced {
+  min-height: 220px;
+}
+
+.library-info--rich {
+  gap: 12px;
+}
+
+.library-info__title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 16px;
+  background: rgba(49, 91, 255, 0.07);
+  padding: 12px;
+  color: #315bff;
+}
+
+.library-info__title div {
+  display: grid;
+  gap: 2px;
+}
+
+.library-info__title span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.library-info--rich p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+  font-weight: 750;
+}
+
+.home-notices > .notice-list {
+  align-self: start;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.home-notices .notice-list article {
+  grid-template-columns: 22px minmax(0, 1fr) auto;
+  min-height: 36px;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  padding: 5px 0;
+  box-shadow: none;
+}
+
+.home-notices .notice-list svg {
+  align-self: center;
+  justify-self: center;
+  color: #334155;
+}
+
+.home-notices .notice-list strong {
+  min-width: 0;
+  line-height: 1.25;
+}
+
+.home-notices .notice-list span {
+  justify-self: end;
+  color: #53637c;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}

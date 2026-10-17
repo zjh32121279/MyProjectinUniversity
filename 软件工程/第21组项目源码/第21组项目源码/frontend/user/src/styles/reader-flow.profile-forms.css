@@ -1,0 +1,222 @@
+/* Reader v13: neutral action feedback and real profile center panels. */
+.flow-feedback {
+  border: 1px solid rgba(49, 91, 255, 0.18);
+  border-radius: 14px;
+  background: rgba(49, 91, 255, 0.075);
+  color: #315bff;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.flow-toolbar button.is-active,
+.notification-filter.is-active {
+  border-color: rgba(49, 91, 255, 0.55);
+  background: rgba(49, 91, 255, 0.09);
+  color: #315bff;
+}
+
+.flow-actions button.is-done {
+  border-color: rgba(22, 163, 74, 0.38);
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+}
+
+.flow-rule-list {
+  display: grid;
+  gap: 8px;
+}
+
+.flow-rule-list article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 13px;
+  background: rgba(248, 250, 252, 0.76);
+  padding: 10px 12px;
+}
+
+.flow-rule-list strong {
+  color: #111a3d;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.flow-rule-list span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.profile-panel .profile-entry {
+  width: 100%;
+  appearance: none;
+  cursor: pointer;
+  text-align: left;
+  border: 0;
+  background: transparent;
+}
+
+.profile-panel .profile-entry span {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.profile-panel .profile-entry em {
+  overflow: hidden;
+  color: #64748b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.profile-entry--active {
+  border-radius: 12px;
+  background: rgba(49, 91, 255, 0.08) !important;
+  color: #315bff;
+}
+
+.profile-entry--active strong {
+  color: #315bff !important;
+}
+
+.profile-detail-card {
+  position: sticky;
+  top: calc(var(--bf-nav-height) + 18px);
+  display: grid;
+  gap: 14px;
+  min-height: 360px;
+  padding: 22px;
+}
+
+.profile-detail-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  padding-bottom: 12px;
+}
+
+.profile-detail-card__header h2 {
+  margin: 0 0 6px;
+  color: #111a3d;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.profile-detail-card__header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.profile-detail-card__header > span {
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: rgba(49, 91, 255, 0.1);
+  color: #315bff;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.profile-detail-list {
+  display: grid;
+  gap: 8px;
+}
+
+.profile-detail-list article {
+  display: grid;
+  gap: 4px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 13px;
+  background: rgba(248, 250, 252, 0.76);
+  padding: 10px 12px;
+}
+
+.profile-detail-list span {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.profile-detail-list strong {
+  overflow-wrap: anywhere;
+  color: #111a3d;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.profile-detail-list em {
+  color: #7b879b;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.profile-detail-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.profile-detail-actions > button,
+.profile-inline-form button {
+  min-height: 38px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--bf-gradient);
+  color: #fff;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.profile-inline-form {
+  display: grid;
+  gap: 9px;
+}
+
+.profile-inline-form input,
+.profile-inline-form select,
+.profile-inline-form textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid rgba(148, 163, 184, 0.38);
+  border-radius: 12px;
+  background: white;
+  color: #111a3d;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 750;
+  outline: none;
+}
+
+.profile-inline-form textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.profile-inline-form input:focus,
+.profile-inline-form select:focus,
+.profile-inline-form textarea:focus {
+  border-color: rgba(49, 91, 255, 0.62);
+  box-shadow: 0 0 0 4px rgba(49, 91, 255, 0.08);
+}
+
+.profile-inline-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+}
+
+@media (max-width: 1180px) {
+  .profile-detail-card {
+    position: static;
+  }
+}
+

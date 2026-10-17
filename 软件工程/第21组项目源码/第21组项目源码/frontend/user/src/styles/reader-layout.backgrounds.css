@@ -1,0 +1,97 @@
+/* BookFlow reader home refinement: 1536x864 visual pass */
+.user-background--home {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.22) 54%, rgba(241, 245, 255, 0.44) 100%),
+    url("../assets/backgrounds/home-bg.png") center / cover no-repeat;
+}
+
+.user-background--home::after {
+  background:
+    radial-gradient(circle at 84% 14%, rgba(222, 229, 255, 0.38), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.26) 46%, rgba(246, 248, 255, 0.52) 100%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.18) 50%, rgba(244, 247, 255, 0.46) 100%);
+  backdrop-filter: blur(1.5px);
+}
+
+.user-background--content {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(246, 248, 255, 0.18)),
+    url("../assets/backgrounds/content-bg.png") center / cover no-repeat;
+}
+
+.user-background--content::after {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(246, 248, 255, 0.26)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06));
+  backdrop-filter: none;
+}
+
+.ai-widget__messages {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+}
+
+.ai-widget__message {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-widget__message p {
+  margin: 0;
+  word-break: break-word;
+}
+
+.ai-widget__action-card {
+  max-width: min(440px, 88%);
+  align-self: flex-start;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 14px;
+  background: #fff;
+  padding: 14px 16px;
+  font-size: 13px;
+  color: #334155;
+}
+
+.ai-widget__action-card strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 850;
+  color: #172033;
+}
+
+.ai-widget__action-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ai-widget__action-card dl {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+}
+
+.ai-widget__action-card dl div {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 8px;
+}
+
+.ai-widget__action-card dt {
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.ai-widget__action-card dd {
+  overflow-wrap: anywhere;
+  font-weight: 800;
+  font-size: 13px;
+  color: #172033;
+}
+

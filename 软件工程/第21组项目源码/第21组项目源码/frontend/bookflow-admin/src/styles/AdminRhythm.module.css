@@ -1,0 +1,308 @@
+.page {
+  min-height: calc(100vh - var(--bf-topbar-height) - 32px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.compactPage {
+  min-height: calc(100vh - var(--bf-topbar-height) - 32px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.scrollPage {
+  min-height: calc(100vh - var(--bf-topbar-height) - 32px);
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 0;
+}
+
+.fill {
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.pagedCard {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pagedBody {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 0 !important;
+}
+
+.pagedTable {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.pagedTable :global(.bf-scrollbar) {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  max-width: 100%;
+  overflow: auto;
+  background: #fff;
+}
+
+.pagedTable :global(table) {
+  table-layout: fixed;
+}
+
+.pagedTable :global(.bf-scrollbar table) {
+  height: 100%;
+  min-height: 100%;
+  background: #fff;
+}
+
+.pagedTable :global(th),
+.pagedTable :global(td) {
+  overflow: hidden;
+  border-color: var(--bf-border-soft);
+}
+
+.pagedTable :global(th) {
+  height: var(--admin-table-head-h, 38px) !important;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.pagedTable :global(tbody tr),
+.pagedTable :global(td) {
+  height: max(var(--admin-table-row-h, 48px), calc((100% - var(--admin-table-head-h, 38px)) / var(--bf-table-row-count, 1))) !important;
+}
+
+.pagedTable :global(td) {
+  color: #172033;
+  font-size: 13px;
+  line-height: 1.35;
+  vertical-align: middle !important;
+}
+
+.pagedTable :global(td > *) {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.pagedTable :global(td :where(p, span, div)) {
+  overflow-wrap: anywhere;
+}
+
+.pagedTable :global(td :where(button, a)) {
+  white-space: nowrap;
+}
+
+.pagedTable :global(tbody tr:hover) {
+  background: #f8fbff;
+}
+
+.pagedTable :global(.bf-data-table-footer) {
+  min-height: 54px !important;
+  flex: 0 0 54px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.emptyTableCard {
+  flex: 0 0 auto;
+}
+
+.tasksCard {
+  min-height: 200px;
+}
+
+.tasksTable {
+  --admin-table-head-h: 38px;
+  --admin-table-row-h: 60px;
+}
+
+.tasksTable :global(td) {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.readersCard {
+  min-height: 200px;
+}
+
+.readersHeader :global(h1) {
+  font-size: 21px;
+  line-height: 1.15;
+}
+
+.readersHeader :global(p) {
+  margin-top: 4px;
+}
+
+.readerStatCard {
+  height: 94px !important;
+  min-height: 94px !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+
+.readerStatCard :global(.text-\[30px\]) {
+  font-size: 28px !important;
+}
+
+.readerFilter {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+
+.readersTable {
+  --admin-table-head-h: 40px;
+  --admin-table-row-h: 59px;
+}
+
+.readersTable :global(th),
+.readersTable :global(td) {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+
+.readersTable :global(th) {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  font-size: 14px !important;
+}
+
+.readersTable :global(td) {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  font-size: 15px !important;
+  line-height: 1.41 !important;
+}
+
+.notificationsCard {
+  min-height: 200px;
+}
+
+.notificationStatCard {
+  height: 104px !important;
+  min-height: 104px !important;
+}
+
+.notificationsTable {
+  --admin-table-head-h: 38px;
+  --admin-table-row-h: 51px;
+}
+
+.notificationsTable :global(td) {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.catalogCard {
+  min-height: 200px;
+}
+
+.catalogTable {
+  --admin-table-head-h: 44px;
+  --admin-table-row-h: 89px;
+}
+
+.catalogTable :global(th) {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  white-space: nowrap;
+}
+
+.catalogTable :global(td) {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.borrowingHomeMain {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+  flex-direction: column;
+  border: 1px solid #e8edf6;
+  border-radius: 18px;
+  background: white;
+  padding: 28px 28px 16px;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.055);
+}
+
+.dataContent {
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.settingsCard {
+  min-height: 184px;
+}
+
+.scrollPage > :global(section:last-child) {
+  min-height: 236px;
+}
+
+.homePage {
+  padding-bottom: 20px;
+}
+
+.homeThemesCard {
+  min-height: 96px !important;
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.homeThemeScroller {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding-bottom: 0;
+  scrollbar-width: none;
+  scrollbar-gutter: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.homeThemeScroller::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.homeThemeScroller::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: transparent;
+}
+
+.homeThemeScroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (max-height: 820px) {
+  .readersCard { min-height: 186px; }
+}
+
+.borrowStepLayout {
+  height: calc(100vh - var(--bf-topbar-height) - 48px);
+  min-height: 620px;
+  max-height: calc(100vh - var(--bf-topbar-height) - 32px);
+}

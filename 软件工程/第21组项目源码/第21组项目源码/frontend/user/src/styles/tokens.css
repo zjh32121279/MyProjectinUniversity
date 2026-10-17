@@ -1,0 +1,20 @@
+:root {
+  color-scheme: light;
+  --bf-primary: #1f5eff;
+  --bf-primary-2: #315bff;
+  --bf-primary-3: #6250e8;
+  --bf-title: #0f172a;
+  --bf-text: #405066;
+  --bf-muted: #6f7d91;
+  --bf-line: rgba(100, 116, 139, 0.22);
+  --bf-card: rgba(255, 255, 255, 0.94);
+  --bf-card-solid: #ffffff;
+  --bf-shadow: 0 10px 28px rgba(30, 41, 59, 0.08);
+  --bf-shadow-strong: 0 20px 54px rgba(30, 41, 59, 0.14);
+  --bf-gradient: linear-gradient(135deg, #1f5eff 0%, #315bff 54%, #6250e8 100%);
+  --bf-radius-xl: 18px;
+  --bf-radius-lg: 14px;
+  --bf-radius-md: 10px;
+  --bf-nav-height: 64px;
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+}

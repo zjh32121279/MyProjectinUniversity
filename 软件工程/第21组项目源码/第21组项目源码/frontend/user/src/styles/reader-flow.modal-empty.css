@@ -1,0 +1,155 @@
+/* Reader v14: no inner result scroll, compact category carousel, modal detail, zoomable shelf map. */
+.home-hero .category-carousel {
+  display: grid;
+  width: min(860px, 100%);
+  gap: 10px;
+  margin: 22px auto 0;
+}
+
+.home-hero .category-carousel .category-row {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 12px 18px !important;
+  max-height: 104px !important;
+  overflow: hidden !important;
+}
+
+.home-hero .category-carousel .category-pill {
+  width: 100% !important;
+  min-width: 0 !important;
+  justify-content: center !important;
+  padding-inline: 14px !important;
+}
+
+.category-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.category-dots button {
+  width: 7px;
+  height: 7px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(100, 116, 139, 0.2);
+  padding: 0;
+}
+
+.category-dots button.is-active {
+  width: 22px;
+  background: var(--bf-primary);
+}
+
+
+
+
+
+/* Reader v16: home data cards and clean empty states. */
+.ai-draggable {
+  width: max-content !important;
+  height: max-content !important;
+}
+
+.ai-draggable .ai-widget {
+  position: relative !important;
+}
+
+.home-page .empty-state,
+.flow-side-empty .empty-state,
+.notification-empty-zone .empty-state,
+.flow-empty-zone .empty-state {
+  display: flex !important;
+  min-height: 118px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-align: center !important;
+}
+
+.home-page .empty-state span,
+.flow-side-empty .empty-state span,
+.notification-empty-zone .empty-state span,
+.flow-empty-zone .empty-state span {
+  margin: 0 auto 8px !important;
+}
+
+.home-page .empty-state strong,
+.flow-side-empty .empty-state strong,
+.notification-empty-zone .empty-state strong,
+.flow-empty-zone .empty-state strong {
+  margin: 0 !important;
+}
+
+/* Reader v17: make the home library profile card feel filled, not sparse. */
+.home-library.home-library--synced {
+  display: flex !important;
+  min-height: 246px !important;
+  flex-direction: column !important;
+  padding: 24px 26px !important;
+}
+
+.home-library.home-library--synced .section-heading {
+  margin-bottom: 18px !important;
+}
+
+.home-library.home-library--synced .section-heading h2 {
+  font-size: 22px !important;
+  line-height: 1.2 !important;
+}
+
+.home-library .library-info--rich {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+}
+
+.home-library .library-info__title {
+  min-height: 88px !important;
+  gap: 16px !important;
+  border-radius: 18px !important;
+  padding: 18px 20px !important;
+}
+
+.home-library .library-info__title > svg {
+  width: 34px !important;
+  height: 34px !important;
+  flex: 0 0 auto !important;
+}
+
+.home-library .library-info__title strong {
+  font-size: 21px !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+}
+
+.home-library .library-info__title span {
+  margin-top: 4px !important;
+  font-size: 14px !important;
+  line-height: 1.35 !important;
+}
+
+.home-library .library-info--rich p {
+  min-height: 32px !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  color: #475569 !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-weight: 820 !important;
+}
+
+.home-library .library-info--rich p svg {
+  width: 18px !important;
+  height: 18px !important;
+  flex: 0 0 auto !important;
+}
+
+
+

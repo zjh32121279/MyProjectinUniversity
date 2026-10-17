@@ -1,0 +1,227 @@
+/* Final reader layout repair pass: restore auth artwork and remove oversized empty regions. */
+.app-background--auth {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0%, rgba(248, 251, 255, 0.18) 46%, rgba(239, 244, 255, 0.42) 100%),
+    url("../assets/backgrounds/auth-bg.png") center / cover no-repeat !important;
+}
+
+.app-background--auth::after {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.22) 47%, rgba(245, 248, 255, 0.72) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(245, 248, 255, 0.34) 100%) !important;
+  backdrop-filter: none !important;
+}
+
+.auth-hero__copy h1,
+.auth-hero__copy p,
+.bookflow-logo__text strong,
+.bookflow-logo__text small {
+  text-shadow: 0 8px 26px rgba(255, 255, 255, 0.58);
+}
+
+.user-page.home-page {
+  padding-top: 18px !important;
+}
+
+.home-board {
+  grid-template-columns: minmax(0, 820px) minmax(390px, 1fr) !important;
+  gap: 18px 24px !important;
+}
+
+.home-hero {
+  min-height: 330px !important;
+  max-width: 820px !important;
+  padding-top: 42px !important;
+}
+
+.home-hero h1 {
+  font-size: clamp(46px, 3.75vw, 60px) !important;
+  line-height: 1.04 !important;
+}
+
+.home-hero p {
+  margin-top: 12px !important;
+  font-size: 18px !important;
+}
+
+.home-hero .big-search {
+  margin-top: 26px !important;
+}
+
+.home-hero .category-row {
+  min-height: 0 !important;
+  margin-top: 18px !important;
+}
+
+.home-side-column {
+  gap: 12px !important;
+  padding-top: 10px !important;
+}
+
+.home-summary {
+  min-height: 158px !important;
+}
+
+.home-summary .stat-card {
+  min-height: 76px !important;
+  gap: 6px !important;
+}
+
+.home-due {
+  min-height: 142px !important;
+}
+
+.home-due .empty-state,
+.home-bottom-grid .empty-state,
+.home-recommend .empty-state,
+.home-notices .empty-state,
+.home-library .empty-state {
+  min-height: 84px !important;
+}
+
+.home-bottom-grid {
+  grid-template-columns: minmax(380px, 1fr) minmax(320px, 0.86fr) minmax(260px, 0.7fr) !important;
+  gap: 18px !important;
+  padding-right: 0 !important;
+}
+
+.home-recommend,
+.home-notices,
+.home-library {
+  min-height: 174px !important;
+}
+
+.ai-draggable .ai-widget__robot {
+  min-width: 0 !important;
+  width: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-items: initial !important;
+  gap: 6px !important;
+  border-radius: 10px !important;
+  background: var(--bf-gradient) !important;
+  padding: 6px 10px 6px 8px !important;
+  box-shadow: 0 10px 24px rgba(31, 94, 255, 0.24) !important;
+}
+
+.ai-draggable .ai-widget__robot img {
+  width: 34px !important;
+  height: 34px !important;
+}
+
+.ai-draggable .ai-widget__robot strong {
+  min-height: 32px !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 10px !important;
+  font-size: 12px !important;
+}
+
+.flow-record-row {
+  grid-template-columns: 66px minmax(180px, 1fr) 112px 112px 86px 118px !important;
+}
+
+.flow-list,
+.refined-notification-list {
+  display: grid !important;
+  grid-auto-rows: auto !important;
+  align-content: start !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.flow-record-row {
+  min-height: 120px !important;
+  max-height: 120px !important;
+}
+
+.flow-empty-zone,
+.notification-empty-zone {
+  min-height: 72px !important;
+  place-items: stretch !important;
+  border-top: 1px solid rgba(203, 213, 225, 0.7) !important;
+  padding-top: 12px !important;
+}
+
+.flow-empty-zone .empty-state,
+.notification-empty-zone .empty-state {
+  width: 100% !important;
+  min-height: 60px !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  background: #f8fafc !important;
+  padding: 12px 14px !important;
+  text-align: left !important;
+}
+
+.flow-empty-zone .empty-state span,
+.notification-empty-zone .empty-state span {
+  width: 34px !important;
+  height: 34px !important;
+}
+
+.flow-empty-zone .empty-state p,
+.notification-empty-zone .empty-state p {
+  margin-left: 4px;
+}
+
+.flow-side-empty .empty-state {
+  min-height: 74px !important;
+}
+
+.borrow-page .flow-timeline-card,
+.reservation-page .flow-timeline-card {
+  min-height: 158px !important;
+}
+
+.borrow-page .flow-rules-card,
+.reservation-page .flow-rules-card {
+  min-height: 142px !important;
+}
+
+.flow-record-row {
+  grid-template-columns: 66px minmax(180px, 1fr) 112px 112px 86px 118px !important;
+}
+
+.notification-list article {
+  grid-template-columns: 28px minmax(220px, 1fr) 146px 74px 86px !important;
+  max-height: 74px !important;
+}
+
+.notification-list article button {
+  height: 30px;
+  border: 1px solid rgba(49, 91, 255, 0.28);
+  border-radius: 8px;
+  background: #ffffff;
+  color: #315bff;
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+.flow-records-card .pagination,
+.notification-records-card .pagination {
+  min-height: 42px;
+  padding-top: 12px;
+}
+
+@media (max-width: 1280px) {
+  .home-board,
+  .home-bottom-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .home-hero {
+    min-height: 0 !important;
+  }
+
+  .flow-record-row,
+  .notification-list article {
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+  }
+}
+

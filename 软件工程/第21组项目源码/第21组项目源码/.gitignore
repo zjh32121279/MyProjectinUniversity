@@ -1,0 +1,70 @@
+# Environment files
+.env
+*.env
+*.env.local
+!.env.example
+
+# Python generated files
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+*.py[cod]
+*$py.class
+
+# Frontend generated files
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Runtime data and logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+backend/data/*.db
+backend/data/uploads/
+backend/logs/
+
+# Local artifacts
+artifacts/
+screenshots/
+.claude/
+
+# Editor / OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Local code intelligence, development tools, and generated outputs
+sf_tool/
+.codegraph/
+.gitnexus/
+.gitnexus-tool/
+.repomix-tool/
+.bruno-tool/
+.playwright-tool/
+.playwright-browsers/
+.quality-tool/
+.repomix-cache/
+repomix-output.*
+repomix-output.txt
+repomix-output.md
+repomix-output.xml
+.playwright/
+playwright-report/
+test-results/
+.semgrep/
+.semgrep_cache/
+.ruff_cache/
+node_modules/
+__pycache__/
+.pytest_cache/
+dist/
+build/
+bookflow_core.egg-info/
+*.log
+*.tmp
+Thumbs.db

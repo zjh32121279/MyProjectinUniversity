@@ -1,0 +1,229 @@
+/* Reader v24: keep borrow/reservation/notification main empty states centered instead of split into a row. */
+.borrow-page .flow-records-card > .flow-empty-zone,
+.reservation-page .flow-records-card > .flow-empty-zone,
+.notification-page .notification-records-card > .notification-empty-zone {
+  display: grid !important;
+  min-height: 168px !important;
+  place-items: center !important;
+  padding: 18px 0 !important;
+}
+
+.borrow-page .flow-records-card > .flow-empty-zone .empty-state,
+.reservation-page .flow-records-card > .flow-empty-zone .empty-state,
+.notification-page .notification-records-card > .notification-empty-zone .empty-state {
+  display: flex !important;
+  width: min(420px, 100%) !important;
+  min-height: 132px !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.borrow-page .flow-records-card > .flow-empty-zone .empty-state span,
+.reservation-page .flow-records-card > .flow-empty-zone .empty-state span,
+.notification-page .notification-records-card > .notification-empty-zone .empty-state span {
+  margin: 0 0 2px !important;
+}
+
+.borrow-page .flow-records-card > .flow-empty-zone .empty-state strong,
+.borrow-page .flow-records-card > .flow-empty-zone .empty-state p,
+.reservation-page .flow-records-card > .flow-empty-zone .empty-state strong,
+.reservation-page .flow-records-card > .flow-empty-zone .empty-state p,
+.notification-page .notification-records-card > .notification-empty-zone .empty-state strong,
+.notification-page .notification-records-card > .notification-empty-zone .empty-state p {
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+/* Reader v26: profile center uses the hero plus a full workbench grid, no KPI strip. */
+.profile-page--refined .flow-feedback {
+  margin: 14px 0 !important;
+}
+
+.profile-grid--restored {
+  grid-template-columns: repeat(3, minmax(280px, 1fr)) !important;
+  gap: 18px !important;
+}
+
+.profile-grid--restored .profile-panel {
+  min-height: 244px !important;
+  grid-template-rows: auto minmax(0, 1fr) !important;
+  gap: 16px !important;
+  padding: 22px !important;
+}
+
+.profile-grid--restored .profile-panel__items {
+  display: grid !important;
+  grid-auto-rows: minmax(58px, 1fr) !important;
+  gap: 8px !important;
+}
+
+.profile-grid--restored .profile-entry {
+  min-height: 58px !important;
+  align-items: center !important;
+  border: 1px solid rgba(203, 213, 225, 0.7) !important;
+  border-radius: 12px !important;
+  background: rgba(248, 250, 252, 0.72) !important;
+  padding: 10px 12px !important;
+}
+
+.profile-grid--restored .profile-entry__text {
+  align-content: center !important;
+  gap: 4px !important;
+}
+
+.profile-grid--restored .profile-entry strong,
+.profile-grid--restored .profile-entry em {
+  display: block !important;
+  max-width: 100% !important;
+  text-align: left !important;
+}
+
+.profile-grid--restored .profile-entry svg {
+  justify-self: end !important;
+}
+
+@media (max-width: 1280px) {
+  .profile-grid--restored {
+    grid-template-columns: repeat(2, minmax(260px, 1fr)) !important;
+  }
+}
+
+/* ---- 借阅历史时间线 ---- */
+.borrow-timeline {
+  display: grid;
+  gap: 0;
+  position: relative;
+}
+
+.borrow-timeline::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 17px;
+  width: 2px;
+  border-radius: 1px;
+  background: linear-gradient(180deg, #315bff 0%, rgba(148, 163, 184, 0.2) 100%);
+  content: "";
+}
+
+.borrow-timeline__item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 16px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.borrow-timeline__node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.borrow-timeline__item.is-active .borrow-timeline__node {
+  background: linear-gradient(135deg, #315bff, #7c3aed);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(49, 91, 255, 0.3);
+}
+
+.borrow-timeline__item.is-returned .borrow-timeline__node {
+  background: #e2e8f0;
+  color: #94a3b8;
+}
+
+.borrow-timeline__content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-radius: 14px;
+  background: rgba(248, 250, 252, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  padding: 12px 14px;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.borrow-timeline__content:hover {
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+}
+
+.borrow-timeline__cover {
+  width: 52px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
+}
+
+.borrow-timeline__cover--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e0e7ff, #ddd6fe);
+  color: #818cf8;
+}
+
+.borrow-timeline__info {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.borrow-timeline__info strong {
+  font-size: 15px;
+  font-weight: 900;
+  color: #0f172a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.borrow-timeline__info > span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.borrow-timeline__dates {
+  display: flex;
+  gap: 16px;
+  margin-top: 2px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* ---- 关于我们弹窗：纯文本段落（无边框卡片） ---- */
+.profile-detail-text {
+  display: grid;
+  gap: 0;
+}
+
+.profile-detail-text p {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 18px;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #334155;
+}
+
+.profile-detail-text strong {
+  font-weight: 800;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.profile-detail-text span {
+  color: #1e293b;
+}
